@@ -1,0 +1,176 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/*MENU*/
+.menu{
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(235, 232, 232);
+}
+
+.menu__img{
+    display: block;
+    width: 500px;
+    height: 100px
+}
+
+.menu__lista{
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+}
+
+.menu__item{
+    list-style: none;
+    }
+.menu__item a{
+    text-decoration: none;
+    color: black;
+    font-family: sans-serif;
+    border-bottom: 4px solid transparent;
+}
+.menu__item a:hover{
+    color: lightslategrey;
+    border-bottom: (4px solid  lightslategrey);
+}
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}  
+
+@media (max-width: 952px){
+  .checkbtn{
+    display: block;
+  }
+}
+
+/*HERO SECCION*/
+.hero{
+    background-image: url(../img/hands-inicio\(nueva\).jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*MAIN*/
+/*card section*/
+
+.versiculo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  min-height: 200px;
+  text-align: center;
+  color: black;
+}
+
+.card_ejemplo {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  margin-bottom: 5px;
+}
+
+.card_ejemplo .content {
+  z-index: 1;
+  text-align: center;
+}
+
+.transparencia {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color:  gray;
+  opacity: 0.4;
+}
+
+.card_ejemplo.nosotros {
+  background-image: url('../img/hands-nosotros.jpg');
+}
+
+.card_ejemplo.ministerios {
+  background-image: url('../img/hands-ministerios.jpg');
+}
+
+.card_ejemplo.recursos {
+  background-image: url('../img/hands-recursos.jpg');
+}
+
+.card_ejemplo.contacto {
+  background-image: url('../img/hands-contacto.jpg');
+}
+
+/* Seccion en negro */
+
+#section-negro{
+  background-color: black;
+}
+#section-negro__contenedor{
+  color: white;
+  display: grid;
+  grid-template-areas:
+      "texto1 titulo ."
+      ". titulo ."
+      ".1 titulo texto2";
+  grid-template-columns: repeat(3, 2fr);
+  grid-template-rows: repeat(3, 1fr);
+  max-width: 700px;
+  margin:auto;
+}
+#section-negro__titulo{
+  font-size: 3rem;
+  font-weight: 900;
+  grid-area: titulo;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#section-negro__texto1{
+  grid-area: texto1;
+}
+#section-negro__texto2{
+  grid-area: texto2;
+}
+#section-negro__.{
+  grid-area: .;
+}
+#section-negro__.1{
+  grid-area: .1;
+}
+
+/*FOOTER*/
+
+footer{
+  background-color: rgb(235, 232, 232);
+}
+
+.footer__title{
+    font-family: sans-serif;
+    text-align: center;
+}
+
+
