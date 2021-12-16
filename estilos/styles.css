@@ -13,9 +13,16 @@
 }
 
 .menu__img{
-    display: block;
+    
     width: 500px;
     height: 100px
+}
+
+.menu__titulo{
+    display: flex;
+    justify-content: center;
+    text-align:center;
+    width: 50%;
 }
 
 .menu__lista{
